@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+% to comment out blocks 
+\usepackage{verbatim}
+
+% to center align and specify column width in tables
+\usepackage{array}
+
+% german Language, new writing rules
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}  %<========== Language German, new orthography
+
+\usepackage{fontawesome}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+%\firstname{\Huge{\scshape{Ajith}}} % Your first name
+%\familyname{\scshape{Krishnan}} % Your last name
+
+\name{\scshape{Ajith}}{\scshape{Krishnan}}
+
+% All information in this block is optional, comment out any lines you don't need
+\title{\Large{Curriculum Vitae}}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{ajith.krishnan@alumni.fh-aachen.de}
+%\homepage{www.linkedin.com/in/ajith-krishnan}{linkedin.com/ajith-krishnan} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \homepage{www.github.com/ajithkrishnan}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\social[linkedin]{linkedin.com/in/ajith-krishnan}
+\social[github]{github.com/ajithkrishnan} 
+\extrainfo{DOB: 04.01.1993 | Nationality: Indian}
+%\extrainfo{\httplink{github.com/ajithkrishnan}}
+%\address{Scheibenstraße 14}{Aachen, Deutschland 52070}
+\mobile{+49 15758660972}
+\photo[89pt][0.3pt]{../pictures/bild.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+%\begin{comment}
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+As per our conversation, last Tuesday, I am sending you my CV and github/gitlab links to some projects i have worked on. 
+Consider this my application for the PhD position you had mentioned.
+
+I have worked extensively on ROS, both during my course at FH Aachen and while working at Streetscooter GmbH, 
+and am very thorough in my knowledge of its architecture. 
+I have implemented various SLAM and VO algorithms/networks (ORBSLAM2, RGBD SLAM, vid2depth, sfmlearner) using OpenCV, G2O, Tensorflow etc. I also have experience working with Simulation/Game engines like Unity3D and Unreal Engine. All the above projects have made me quite fluent in Python and C++.
+
+
+Furthermore, I do enjoy shell scripting and have good experience with the 
+Linux system (Ubuntu, Fedora), Docker and SLURM scheduling.
+
+
+Project links:
+
+
+This was my Master Mechatronics project where i was part of a team 
+that developed an omnidirectional AGV using ROS/Gazebo. I was primarily 
+involved in the design of the position controller.
+
+- Omnidirectional AGV with integrated low level controlller: 
+\httplink{https://github.com/ajithkrishnan/agv}
+
+
+I had modified these existing networks to run on custom training and 
+test datasets at Streetscooter GmbH.
+
+-  vid2depth: \httplink{https://gitlab.com/ajithkrishnan/models/tree/master/research/vid2depth}
+
+- SfMLearner: \httplink{https://gitlab.com/ajithkrishnan/sfmlearner}
+
+
+These are some of the Docker Images i had created to work on various projects.
+
+- Docker Images: \httplink{https://github.com/ajithkrishnan/Docker} 
+
+
+
+
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+%\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{\textbf{\Large{E}\large{XPERIENCE}}}
+\section{\scshape{Experience}}
+
+%\subsection{\scshape{Work Experience}}
+\cventry{\fontsize{9}{10.8}\selectfont{2018 - Now}}{Student Assistant}{Streetscooter GmbH}{Aachen, Germany}{}
+{
+\begin{itemize}
+\item Developed and designed simulations of autonomous vehicles in Unity 3D and Unreal
+    Engine
+\item Implemented indoor/outdoor SLAM systems viz. RGBD SLAM, Elastic Fusion, 
+LSD SLAM and ORB SLAM2 using Intel Realsense d415 RGBD camera    
+\item Implemented various Unsupervised Learning Visual Odometry pipelines viz. Sfmlearner, vid2depth using Tensorflow
+\newline{}
+\end{itemize}}
+
+%{Implemented various Unsupervised Learning Visual Odometry pipelines viz. Sfmlearner, vid2depth using Tensorflow\newline{}}
+
+
+\cventry{\fontsize{9}{10.8}\selectfont{2014 - 2016}}{Mechanical Engineer}{JAL Engineering Services L.L.C}{Oman}{}{
+\begin{itemize}
+\item Designed an installed HVAC systems in commercial buildings in Muscat, Oman.
+\newline{}
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Education}}
+
+\cventry{\fontsize{9}{10.8}\selectfont{2016 - Now}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.31}
+{\begin{itemize}
+\item Subjects:  Industrial Communication, ROS, Advanced Robotics and Autonomous Mobile Systems
+\item Projects: 
+\begin{itemize}
+\item Development of Holonomic Automated Guided Vehicle - Implementing Autonomous Navigation and safety features using ROS. (ongoing)
+\item PWFHRC - Developed Autonomous Navigation System to track Wildlife in Kruger National Park using ROS and Gazebo.(July 2017)
+\item Arduino based Light Detection System - Developed a PID control system to manipulate the light intensity with a rolling shutter system(June 2017)
+\item Arduino based CAN – Developed a network based on MCP2515 CAN module using Arduino Uno. (December 2016)
+\newline{}
+\end{itemize}
+\end{itemize}  % Arguments not required can be left empty
+}
+
+\cventry{\fontsize{9}{10.8}\selectfont{2010 - 2014}}{Bachelors(B.Tech) in Mechanical Engineering}{College of Engineering}{Trivandrum, India}{GPA:7.56/10 (highest GPA:10.0)}
+{\begin{itemize}
+\item Subjects: Computer Programming and Numerical Methods, Computational Fluid Dynamics, Automobile Engineering
+\item Main Project: Numerical Study of Blunt Cone in a Flow Field – Studied the Lift and Drag characteristics using ANYSYS FLUENT (September 2013 – May 2014)
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	SOFTWARE SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Software Skills}}
+
+\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{C++/C, Python, Matlab Simulink, Robotic Operating System(ROS), Gazebo, OpenCV}
+\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{SolidWorks, AutoCAD\newpage}
+%\cvitem{Basic}{Computer Hardware and Support}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Language Skills}}
+
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Mother Tongue}}{\normalfont{Malayalam}}{}
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Other Language(s)}}{\normalfont{English(TOEFL: 111/120)}}{}
+\cvitemwithcomment{}{\begin{tabular}{|>{\centering\arraybackslash}p{3.5cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+\normalfont{Language} & \normalfont{Listening} & \normalfont{Reading} & \normalfont{Speaking} & \normalfont{Writing}\\
+\hline
+\normalfont{Deutsch} & \normalfont{B1} & \normalfont{B1} & \normalfont{B1} & \normalfont{B1}\\
+\hline
+\end{tabular}
+\newline{}\newline{}
+\footnotesize{\normalfont{(*) Common European Framework of Reference(CEFR) Level}}}{}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Additional Information}}
+
+\cventry{\fontsize{9}{10.8}\selectfont{2018 - Now}}{Member}{Foodsharing}{Aachen, Germany}{}{Food sharing is a 2012 initiative against food waste that ßaves"food that would otherwise
+be thrown away. Over 200,000 registered users in Germany/Austria/Switzerland and
+over 25,000 volunteers, so-called food savers, make this initiative an international
+movement.}
+\cventry{\fontsize{9}{10.8}\selectfont{2013 - 2014}}{Public Relations Head}{Make A Difference}{India}{}{Make A Difference is a platform that empowers youth to become change leaders who make positive social impact and create self-sustaining communities by educating nearly 4000 children across 23 cities in India.}
+\cventry{\fontsize{9}{10.8}\selectfont{2013 - 2013}}{Event Organiser}{TEDxCET}{India}{}{The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences.}
+
+\begin{comment}
+\cvitem{\fontsize{9}{10.8}\selectfont{2008-Present}}{Member of Toastmasters International}
+\cvitem{\fontsize{9}{10.8}\selectfont{03.12.2011}}{Attended ‘Haptic RoboArm’ workshop conducted by IEEE SB-TKMIT, India.}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+\end{comment}
+%----------------------------------------------------------------------------------------
+
+\end{document}
