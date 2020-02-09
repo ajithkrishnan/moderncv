@@ -6,7 +6,7 @@
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
 %
-% Original author:
+% Original author: 
 % Xavier Danaux (xdanaux@gmail.com) with modifications by:
 % Vel (vel@latextemplates.com)
 %
@@ -48,6 +48,9 @@
 
 \usepackage{fontawesome}
 \usepackage{etoolbox}
+
+\usepackage{csquotes}
+\usepackage{ragged2e}
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -101,49 +104,41 @@
 
 \clearpage
 
-\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\recipient{HR Department}{ } 
 \date{\today} % Letter date
-\opening{Dear Sir or Madam,} % Opening greeting
+\opening{Dear Sir/Madam,} % Opening greeting
 \closing{Sincerely yours,} % Closing phrase
 \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
 
 \makelettertitle % Print letter title
 
-As per our conversation, last Tuesday, I am sending you my CV and github/gitlab links to some projects i have worked on. 
-Consider this my application for the PhD position you had mentioned.
+\justify
 
-I have worked extensively on ROS, both during my course at FH Aachen and while working at Streetscooter GmbH, 
-and am very thorough in my knowledge of its architecture. 
-I have implemented various SLAM and VO algorithms/networks (ORBSLAM2, RGBD SLAM, vid2depth, sfmlearner) using OpenCV, G2O, Tensorflow etc. I also have experience working with Simulation/Game engines like Unity3D and Unreal Engine. All the above projects have made me quite fluent in Python and C++.
+I was excited to see the job opening for a Research Assistant position at DeepL, 
+as it seeks the skillset and interests that I hold. I am currently completing my
+Master's degree in Mechatronics at FH Aachen University(submitting my Master Thesis on 09th March 2020) and 
+hope to be  invited for an interview.
 
+My initiation into Machine Learning happened while attending a course on AI 
+by Prof. Dr.Ing Stephan Kallweit. He directed me towards the book \enquote{Artificial 
+Intelligence, A Modern Approach - Stuart Russel and Peter Norvig}, and so the 
+journey began.
 
-Furthermore, I do enjoy shell scripting and have good experience with the 
-Linux system (Ubuntu, Fedora), Docker and SLURM scheduling.
+My early experiments with Neural Networks involved simple Image 
+Classifiers and Binary Sentence Classifiers. While working as a Student 
+Assistant at Streetscooter GmbH I implemented state of the art 
+DL-based networks for Object Detection and estimating Odometry 
+from various sensors (cameras, wheel encoders etc.). 
+Throughout this transition, I completed Deep Learning courses online(Andrew Ng) 
+and referred books like \enquote{Deep Learning - Ian Goodfellow} to further understand 
+the working principles of these networks. Simultaneously working with 
+Simulation Engines like Unity3D and Unreal Engine, has helped hone my skills in C++ and C\#.
 
-
-Project links:
-
-
-This was my Master Mechatronics project where i was part of a team 
-that developed an omnidirectional AGV using ROS/Gazebo. I was primarily 
-involved in the design of the position controller.
-
-- Omnidirectional AGV with integrated low level controlller: 
-\httplink{github.com/ajithkrishnan/agv}
-
-
-I had modified these existing networks to run on custom training and 
-test datasets at Streetscooter GmbH.
-
--  vid2depth: \httplink{gitlab.com/ajithkrishnan/models/tree/master/research/vid2depth}
-
-- SfMLearner: \httplink{gitlab.com/ajithkrishnan/sfmlearner}
-
-
-These are some of the Docker Images i had created to work on various projects.
-
-- Docker Images: \httplink{github.com/ajithkrishnan/Docker} 
-
+I have found the process of learning a new language to be quite immersive and 
+challenging. If given an opportunity at your firm, with the skills I have acquired over the 
+past few years, I am confident that I can contribute to this venture and help 
+the next generation of langugage learners.
 
 
 
@@ -172,8 +167,8 @@ These are some of the Docker Images i had created to work on various projects.
 \cventry{\fontsize{9}{10.8}\selectfont{2018 - Now}}{Student Assistant}{Streetscooter GmbH}{Aachen, Germany}{}
 {
 \begin{itemize}
-\item Developed and designed simulations of autonomous vehicles in Unity 3D and Unreal Engine.
-\item Implemented indoor/outdoor SLAM systems using RGBD and Monocular cameras.    
+\item Designed and implemented MLP to estimate Odometry of a vehicle using Keras.
+\item Implemented state of the art Deep Learning based monocular visual odometry systems using Tensorflow/Keras.    
 \newline{}
 \end{itemize}
 }
@@ -198,7 +193,7 @@ These are some of the Docker Images i had created to work on various projects.
 \cventry{\fontsize{9}{10.8}\selectfont{2016 - Now}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.31}
 {
 \begin{itemize}
-\item Subjects:  Industrial Communication, ROS, Advanced Robotics and Autonomous Mobile Systems
+\item Subjects:  Advanced Mathematics, ROS, Advanced Robotics and Autonomous Mobile Systems
 \item Projects: Developed of Holonomic Automated Guided Vehicle using ROS, Developed Autonomous Navigation System to track Wildlife in Kruger National Park using ROS and Gazebo.
 \item Thesis: Visual-Wheel Odometry based Localization of Logistic Transporters.
 \newline{}
@@ -220,8 +215,8 @@ These are some of the Docker Images i had created to work on various projects.
 
 \section{\scshape{Software Skills}}
 
-\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Python, Tensorflow, Keras, Matlab Simulink, Robotic Operating System(ROS), Gazebo}
-\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{C++/C, SolidWorks, AutoCAD\newpage}
+\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Python, Tensorflow, Keras, Robotic Operating System(ROS), Linux OS}
+\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{C++, Unity3D, Unreal Engine, Matlab Simulink\newpage}
 %\cvitem{Basic}{Computer Hardware and Support}
 
 
