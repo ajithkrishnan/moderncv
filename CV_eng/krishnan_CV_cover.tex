@@ -23,7 +23,7 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
+ 
 \documentclass[11pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -36,7 +36,7 @@
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 % to comment out blocks 
-\usepackage{verbatim}
+\usepackage{verbatim} 
 
 % to center align and specify column width in tables
 \usepackage{array}
@@ -76,8 +76,8 @@
     %\gitlabsocialsymbol\httplink{gitlab.com/ajithkrishnan} \\
     %\social[gitlab]{ajithkrishnan} \\
     DOB: 04.01.1993  \\
+    Nationality: Indian \\ 
     \emailsymbol\emaillink{ajith.krishnan@alumni.fh-aachen.de} 
-    %Nationality: Indian
     }
 %\email{ajith.krishnan@alumni.fh-aachen.de}
 % \homepage{www.github.com/ajithkrishnan}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
@@ -95,6 +95,58 @@
 \begin{document}
 
 
+%----------------------------------------------------------------------------------------
+%	APPLICATION SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{comment}
+
+\begingroup
+    \Huge{\textbf{Application Summary}}
+    \vspace{30pt}
+
+    \Large{\textbf{Their Profile}}
+    \begin{itemize}
+        \item RWTH Aachen
+        \item Prof. Dr.-Ing. Jakob Andert
+        \item Research and development - Mechanical, Electronic, IT - elements in modern vehicle drives
+        
+    \end{itemize}
+
+    \vspace{15pt}
+    \Large{\textbf{My Profile}}
+    \begin{itemize}
+        \item Bachelors degree - in Computer Science or related fields
+        \item Good knowledge - data communication, databases, embedded systems, computer graphics, computer Vision
+        \item Good experience - linux systems - implement machine learning algorithms
+        \item Sound knowledge - C, C++, Python, Java
+        \item Basic knowledge - mechanical
+        \item Highly independent - structured way of working
+        \item {\color{red} Fluent in English and German} (spoken and written)
+        
+    \end{itemize}
+
+    \vspace{15pt}
+    \Large{\textbf{Tasks}}
+    \begin{itemize}
+        \item Manage Linux-based traffic simulations with tool Sumo
+        \item Planning, Execution and Analysis - Traffic-simulation - Machine learning
+        \item 
+    \end{itemize}
+
+    \vspace{15pt}
+    \Large{\textbf{Offer}}
+    \begin{itemize}
+        \item EG 10 TV-L
+    \end{itemize}
+
+\endgroup
+
+\newpage
+ 
+\end{comment}
+
+
 %\begin{comment}
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
@@ -105,51 +157,88 @@
 \clearpage
 
 %\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-\recipient{HR Department}{ } 
+\recipient{Research Assistant (Nr. 32206)}{Institute for Data Science in Mechanical Engineering} 
 \date{\today} % Letter date
-\opening{Dear Sir/Madam,} % Opening greeting
+\opening{Dear Prof. Sebastian Trimpe,} % Opening greeting
 \closing{Sincerely yours,} % Closing phrase
 \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
 
 \makelettertitle % Print letter title
 
 \justify
+ 
+I was excited to see a job opening for a Research Assistant at the Institute for Data Science in Mechanical Engineering.
+I strongly believe that the most satisfying work for me is to focus my skills in interdisciplanary research.
+%    I find interdisciplanary research in the field of , to be especially rewarding. 
+This position seeks the expertise and interests that I have acquired over the years and I hope to be 
+invited for an interview.
 
-I was excited to see the job opening for a Research Assistant position at DeepL, 
-as it seeks the skillset and interests that I hold. I am currently completing my
-Master's degree in Mechatronics at FH Aachen University(submitting my Master Thesis on 09th March 2020) and 
-hope to be  invited for an interview.
+I have completed my masters degree, in Mechatronics, from Fachhochschule Aachen. During my course, 
+I had the opportunity to work as a Student Assistant, for two years, 
+at Streetscooter GmbH. I worked and collaborated there, amongst a team of software developers, implementing 
+various model-based and deep-learning-based computer vision projects(SLAM/Odometry). 
+Additionally, I have designed and implemented autonomous vehicle simulations using 
+the simulation engines Unreal Engine(UE4) and Unity3D. I have also worked extensively on the Robotic Operating System (ROS) 
+software stack and the Linux OS (Ubuntu/Fedora). These projects inturn broadened my professional knowledge and helped me 
+gain experience in project management.
 
-My initiation into Machine Learning happened while attending a course on AI 
-by Prof. Dr.Ing Stephan Kallweit. He directed me towards the book \enquote{Artificial 
-Intelligence, A Modern Approach - Stuart Russel and Peter Norvig}, and so the 
-journey began.
+Furthermore, I successfully completed my master thesis under the supervision of 
+Prof. Dipl.-Inf. Ingrid Scholl and Dr.-Ing. Bugra Turan. The scope of my thesis, 
+``Visual-Wheel Odometry-based localization of Logistic Transporters'', was to 
+develop a learning-based multivariate time series localization system which uses wheel-encoder 
+signals as inputs to predict the change in position of the vehicle.
+The process involved retreiving and processing large datasets containing sensor data 
+and preparing them to be input to the network. The research was an iterative process 
+of going from ideation to developing the necessary mathematical models and finally 
+statistically analyzing all the models on an evaluation dataset.
+All this work was implemented in Python(2.7) and C++(C++11) environments on a 
+linux server. This rigorous process is what honed my skills and ignited a 
+passion in me for research.
 
-My early experiments with Neural Networks involved simple Image 
-Classifiers and Binary Sentence Classifiers. While working as a Student 
-Assistant at Streetscooter GmbH I implemented state of the art 
-DL-based networks for Object Detection and estimating Odometry 
-from various sensors (cameras, wheel encoders etc.). 
-Throughout this transition, I completed Deep Learning courses online(Andrew Ng) 
-and referred books like \enquote{Deep Learning - Ian Goodfellow} to further understand 
-the working principles of these networks. Simultaneously working with 
-Simulation Engines like Unity3D and Unreal Engine, has helped hone my skills in C++ and C\#.
-
-I have found the process of learning a new language to be quite immersive and 
-challenging. If given an opportunity at your firm, with the skills I have acquired over the 
-past few years, I am confident that I can contribute to this venture and help 
-the next generation of langugage learners.
+%My initiation into Machine Learning happened while attending a course on AI 
+%by Prof. Dr.Ing Stephan Kallweit. He directed me towards the book \enquote{Artificial 
+%Intelligence, A Modern Approach - Stuart Russel and Peter Norvig}, and so the 
+%journey began.
 
 
 
-%\lipsum[1-2] % Dummy text
-%\lipsum[4] % Dummy text
+%Additionally, I am well versed with Object oriented programming and have good experience with Python and 
+%C++. I have also worked extensively on Linux distributions (Ubuntu and Fedora).
 
+
+
+
+%My initiation into model-based systems engineering happened while attending a course on 
+%Systems Engineering by Prof. Dr.-Ing. Jörg Wollert. Under his guidance, I conceptualized and 
+%implemented a two-wheeled balance robot, whose system model was implemented using SysML.
+
+
+
+%My early experiments with Neural Networks involved simple Image 
+%Classifiers and Binary Sentence Classifiers. While working as a Student 
+%Assistant at Streetscooter GmbH I implemented state of the art 
+%DL-based networks for Object Detection and estimating Odometry 
+%from various sensors (cameras, wheel encoders etc.). 
+%Throughout this transition, I completed Deep Learning courses online(Andrew Ng) 
+%and referred books like \enquote{Deep Learning - Ian Goodfellow} to further understand 
+%the working principles of these networks. Simultaneously working with 
+
+Besides my technical background, I have also worked part time as a teacher while volunteering at Make A Difference (NGO) in India. 
+This has given me the confidence in public speaking which is important while presenting at conferences.
+I thrive in working in unknown environments and have learnt most of the 
+concepts required for these projects through self study. I believe I will be 
+a good addition to your team and only request you to provide me a 
+chance to showcase my drive.% for research. 
+
+\vspace{20pt}
 \makeletterclosing % Print letter signature
+
 
 \newpage
 %\end{comment}
 
+%\begin{comment}
+%
 %----------------------------------------------------------------------------------------
 %	CURRICULUM VITAE
 %----------------------------------------------------------------------------------------
@@ -164,10 +253,11 @@ the next generation of langugage learners.
 \section{\scshape{Experience}}
 
 %\subsection{\scshape{Work Experience}}
-\cventry{\fontsize{9}{10.8}\selectfont{2018 - Now}}{Student Assistant}{Streetscooter GmbH}{Aachen, Germany}{}
+\cventry{\fontsize{9}{10.8}\selectfont{April 2018 - March 2020}}{Student Assistant}{Streetscooter GmbH}{Aachen, Germany}{}
 {
 \begin{itemize}
-\item Designed and implemented MLP to estimate Odometry of a vehicle using Keras.
+\item Designed and implemented learning-based non-linear Odometry model using wheel- and steering-encoder signals.
+\item Implementation of various driving functionalities in simulation environments like Gazebo, Unity3D, UnrealEngine
 \item Implemented state of the art Deep Learning based monocular visual odometry systems using Tensorflow/Keras.    
 \newline{}
 \end{itemize}
@@ -176,7 +266,7 @@ the next generation of langugage learners.
 %{Implemented various Unsupervised Learning Visual Odometry pipelines viz. Sfmlearner, vid2depth using Tensorflow\newline{}}
 
 
-\cventry{\fontsize{9}{10.8}\selectfont{2014 - 2016}}{Mechanical Engineer}{JAL Engineering Services L.L.C}{Oman}{}{
+\cventry{\fontsize{9}{10.8}\selectfont{July 2014 - February 2016}}{Mechanical Engineer}{JAL Engineering Services L.L.C}{Oman}{}{
 \begin{itemize}
 \item Designed an installed HVAC systems in commercial buildings in Muscat, Oman.
 \item Designed and installed Mechanical  installations of Sea Water Intake Pumping Station(SWIPS) in Sohar, Oman.
@@ -190,17 +280,20 @@ the next generation of langugage learners.
 
 \section{\scshape{Education}}
 
-\cventry{\fontsize{9}{10.8}\selectfont{2016 - Now}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.31}
+\cventry{\fontsize{9}{10.8}\selectfont{September 2016 - March 2020}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.0}
 {
 \begin{itemize}
-\item Subjects:  Advanced Mathematics, ROS, Advanced Robotics and Autonomous Mobile Systems
-\item Projects: Developed of Holonomic Automated Guided Vehicle using ROS, Developed Autonomous Navigation System to track Wildlife in Kruger National Park using ROS and Gazebo.
+\item Subjects: Advanced Mathematics, Advanced Robotics and Autonomous Mobile Systems, ROS
+%ROS, Advanced Fabrication Technology 
+%Systems Engineering,
+\item Projects: Developed of Holonomic Automated Guided Vehicle simulation using ROS, Developed a two-wheeled balance bot
+%Developed Autonomous Navigation System to track Wildlife in Kruger National Park using ROS and Gazebo.
 \item Thesis: Visual-Wheel Odometry based Localization of Logistic Transporters.
 \newline{}
 \end{itemize}
 }
 
-\cventry{\fontsize{9}{10.8}\selectfont{2010 - 2014}}{Bachelors(B.Tech) in Mechanical Engineering}{College of Engineering}{Trivandrum, India}{GPA:7.56/10 (highest GPA:10.0)}
+\cventry{\fontsize{9}{10.8}\selectfont{May 2010 - April 2014}}{Bachelors(B.Tech) in Mechanical Engineering}{College of Engineering}{Trivandrum, India}{GPA:7.56/10 (highest GPA:10.0)}
 {
 \begin{itemize}
 \item Subjects: Computer Programming and Numerical Methods, Computational Fluid Dynamics, Automobile Engineering.
@@ -215,8 +308,8 @@ the next generation of langugage learners.
 
 \section{\scshape{Software Skills}}
 
-\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Python, Tensorflow, Keras, Robotic Operating System(ROS), Linux OS}
-\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{C++, Unity3D, Unreal Engine, Matlab Simulink\newpage}
+\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Python, C++, Robotic Operating System(ROS), Linux OS}
+\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{Matlab/SIMULINK, Unity3D, Unreal Engine\newpage}
 %\cvitem{Basic}{Computer Hardware and Support}
 
 
@@ -227,31 +320,37 @@ the next generation of langugage learners.
 \section{\scshape{Language Skills}}
 
 \cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Mother Tongue}}{\normalfont{Malayalam}}{}
-\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Other Language(s)}}{\normalfont{English(TOEFL: 111/120)}}{}
-\cvitemwithcomment{}{\begin{tabular}{|>{\centering\arraybackslash}p{3.5cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+%\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Other Language(s)}}{\normalfont{English(TOEFL: 111/120)}}{}
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Other Language(s)}}{\begin{tabular}{|>{\centering\arraybackslash}p{3.5cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
 \hline
 \normalfont{Language} & \normalfont{Listening} & \normalfont{Reading} & \normalfont{Speaking} & \normalfont{Writing}\\
 \hline
 \normalfont{Deutsch} & \normalfont{B1} & \normalfont{B1} & \normalfont{B1} & \normalfont{B1}\\
 \hline
+\normalfont{English} & \normalfont{C2} & \normalfont{C2} & \normalfont{C2} & \normalfont{C2}\\
+\hline
 \end{tabular}
 %\newline{}\newline{}
 %\footnotesize{\normalfont{(*) Common European Framework of Reference(CEFR) Level}}
 }{}
-\hspace{25mm} \footnotesize{\normalfont{(*) Common European Framework of Reference(CEFR) Level}}
-
+\hspace{25mm} 
+\begingroup
+    \footnotesize{\normalfont{(*) Common European Framework of Reference(CEFR) Level}}
+\endgroup
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
 \section{\scshape{Additional Information}}
 
-\cventry{\fontsize{9}{10.8}\selectfont{2018 - Now}}{Member}{Foodsharing}{Aachen, Germany}{}{Food sharing is a 2012 initiative against food waste that ßaves"food that would otherwise
+\cventry{\fontsize{9}{10.8}\selectfont{June 2018 - Present}}{Member}{Foodsharing}{Aachen, Germany}{}{Food sharing is a 2012 initiative against food waste that saves food that would otherwise
 be thrown away. Over 200,000 registered users in Germany/Austria/Switzerland and
 over 25,000 volunteers, so-called food savers, make this initiative an international
 movement.}
-\cventry{\fontsize{9}{10.8}\selectfont{2013 - 2014}}{Public Relations Head}{Make A Difference}{India}{}{Make A Difference is a platform that empowers youth to become change leaders who make positive social impact and create self-sustaining communities by educating nearly 4000 children across 23 cities in India.}
-\cventry{\fontsize{9}{10.8}\selectfont{2013 - 2013}}{Event Organiser}{TEDxCET}{India}{}{The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences.}
+\cventry{\fontsize{9}{10.8}\selectfont{May 2013 - April 2014}}{Public Relations Head}{Make A Difference}{India}{}{Make A Difference is a platform that empowers youth to become change leaders who make positive social impact and create self-sustaining communities by educating nearly 4000 children across 23 cities in India.}
+%\cventry{\fontsize{9}{10.8}\selectfont{June 2013 - 2013}}{Event Organiser}{TEDxCET}{India}{}{The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences.}
+
+% \end{comment}
 
 \begin{comment}
 \cvitem{\fontsize{9}{10.8}\selectfont{2008-Present}}{Member of Toastmasters International}
@@ -271,5 +370,7 @@ movement.}
 
 \end{comment}
 %----------------------------------------------------------------------------------------
+
+
 
 \end{document}
