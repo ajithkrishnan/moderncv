@@ -31,7 +31,7 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=0.8]{geometry} % Reduce document margins
+\usepackage[scale=0.825]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -51,11 +51,13 @@
 
 \usepackage{csquotes}
 \usepackage{ragged2e}
+%\usepackage{hyperref}
+
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 \patchcmd{\makecvtitle}{[b]}{[t]}{}{}
-\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+%\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
 
 \setlength{\makecvheadnamewidth}{13cm}
 \renewcommand*{\namefont}{\fontsize{31}{32}\mdseries\upshape}
@@ -71,12 +73,12 @@
 %\address{Scheibenstraße 14}{Aachen, Deutschland 52070}
 \mobile{+49 15758660972}
 \social[linkedin]{ajith-krishnan}
-\social[github]{ajithkrishnan} 
+%\social[github]{ajithkrishnan} 
 \extrainfo{
     %\gitlabsocialsymbol\httplink{gitlab.com/ajithkrishnan} \\
     %\social[gitlab]{ajithkrishnan} \\
     DOB: 04.01.1993  \\
-    Nationality: Indian \\ 
+    Nationality: India \\ 
     \emailsymbol\emaillink{ajith.krishnan@alumni.fh-aachen.de} 
     }
 %\email{ajith.krishnan@alumni.fh-aachen.de}
@@ -147,7 +149,7 @@
 \end{comment}
 
 
-%\begin{comment}
+
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
 %----------------------------------------------------------------------------------------
@@ -156,82 +158,52 @@
 
 \clearpage
 
-%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-\recipient{Research Assistant (Nr. 32206)}{Institute for Data Science in Mechanical Engineering} 
+%----------------------------------------------------------------------------------------
+%	EDIT BEFORE SENDING
+%----------------------------------------------------------------------------------------
+
+
+\newcommand{\institute}{Institute for Data Science in Mechanical Engineering\hspace{1mm}}
+\newcommand{\position}{Research Assistant\hspace{1mm}}
+\newcommand{\applicationnr}{32206}
+\newcommand{\intro}{My name is Ajith Krishnan and while I have a strong background in ......... and experience with ............. it is the opportunity 
+to work as \position at \institute that excites me. 
+<something positive about Institute>. I have always wanted to work on projects on ............
+ and have a passion for guiding projects to completion.}
+
+\recipient{\position (Nr. \applicationnr)}{\institute} % Letter recipient
 \date{\today} % Letter date
 \opening{Dear Prof. Sebastian Trimpe,} % Opening greeting
 \closing{Sincerely yours,} % Closing phrase
 \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
 
+%\begin{comment}
+
 \makelettertitle % Print letter title
 
 \justify
- 
-I was excited to see a job opening for a Research Assistant at the Institute for Data Science in Mechanical Engineering.
-I strongly believe that the most satisfying work for me is to focus my skills in interdisciplanary research.
-%    I find interdisciplanary research in the field of , to be especially rewarding. 
-This position seeks the expertise and interests that I have acquired over the years and I hope to be 
-invited for an interview.
-
-I have completed my masters degree, in Mechatronics, from Fachhochschule Aachen. During my course, 
-I had the opportunity to work as a Student Assistant, for two years, 
-at Streetscooter GmbH. I worked and collaborated there, amongst a team of software developers, implementing 
-various model-based and deep-learning-based computer vision projects(SLAM/Odometry). 
-Additionally, I have designed and implemented autonomous vehicle simulations using 
-the simulation engines Unreal Engine(UE4) and Unity3D. I have also worked extensively on the Robotic Operating System (ROS) 
-software stack and the Linux OS (Ubuntu/Fedora). These projects inturn broadened my professional knowledge and helped me 
-gain experience in project management.
-
-Furthermore, I successfully completed my master thesis under the supervision of 
-Prof. Dipl.-Inf. Ingrid Scholl and Dr.-Ing. Bugra Turan. The scope of my thesis, 
-``Visual-Wheel Odometry-based localization of Logistic Transporters'', was to 
-develop a learning-based multivariate time series localization system which uses wheel-encoder 
-signals as inputs to predict the change in position of the vehicle.
-The process involved retreiving and processing large datasets containing sensor data 
-and preparing them to be input to the network. The research was an iterative process 
-of going from ideation to developing the necessary mathematical models and finally 
-statistically analyzing all the models on an evaluation dataset.
-All this work was implemented in Python(2.7) and C++(C++11) environments on a 
-linux server. This rigorous process is what honed my skills and ignited a 
-passion in me for research.
-
-%My initiation into Machine Learning happened while attending a course on AI 
-%by Prof. Dr.Ing Stephan Kallweit. He directed me towards the book \enquote{Artificial 
-%Intelligence, A Modern Approach - Stuart Russel and Peter Norvig}, and so the 
-%journey began.
 
 
+\intro
 
-%Additionally, I am well versed with Object oriented programming and have good experience with Python and 
-%C++. I have also worked extensively on Linux distributions (Ubuntu and Fedora).
+I have completed my masters in Mechatronics from FH Aachen. During my course I have gained experience implementing various model-based and 
+deep-learning based computer-vision pipelines to improve the localization accuracy of autonomous vehicles. I am well versed with Git and Docker, 
+having worked with these systems on a daily basis as Student Assistant at Streetscooter GmbH. Additionally I have extensive experience with the Robotic Operative System (ROS) software stack 
+and the Linux OS.
+    
+What I can bring to your team is good passion for research and the ability to go from ideation to developing the necessary mathematical models 
+and finally analyzing their performances on evaluation data. I am also experienced in object oriented design from developing various packages and libraries 
+in both Python and C++ languages.
 
-
-
-
-%My initiation into model-based systems engineering happened while attending a course on 
-%Systems Engineering by Prof. Dr.-Ing. Jörg Wollert. Under his guidance, I conceptualized and 
-%implemented a two-wheeled balance robot, whose system model was implemented using SysML.
-
-
-
-%My early experiments with Neural Networks involved simple Image 
-%Classifiers and Binary Sentence Classifiers. While working as a Student 
-%Assistant at Streetscooter GmbH I implemented state of the art 
-%DL-based networks for Object Detection and estimating Odometry 
-%from various sensors (cameras, wheel encoders etc.). 
-%Throughout this transition, I completed Deep Learning courses online(Andrew Ng) 
-%and referred books like \enquote{Deep Learning - Ian Goodfellow} to further understand 
-%the working principles of these networks. Simultaneously working with 
-
-Besides my technical background, I have also worked part time as a teacher while volunteering at Make A Difference (NGO) in India. 
-This has given me the confidence in public speaking which is important while presenting at conferences.
-I thrive in working in unknown environments and have learnt most of the 
-concepts required for these projects through self study. I believe I will be 
-a good addition to your team and only request you to provide me a 
-chance to showcase my drive.% for research. 
+This position seeks the expertise and interests that I have acquired over the years and I believe that I will be a good addition to your team. 
+I only request you to provide me a chance to showcase my drive.
 
 \vspace{20pt}
 \makeletterclosing % Print letter signature
+
+
+
+%\end{comment}
 
 
 \newpage
@@ -246,78 +218,144 @@ chance to showcase my drive.% for research.
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{\huge Education}}
+
+\vspace{10pt}
+
+%\cventry{\fontsize{9}{10.8}\selectfont{September 2016 - March 2020}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{Germany}{GPA:2.0}
+%\cventry{\fontsize{9}{10.8}\selectfont{September 2016 - March 2020}}{\large Master Mechatronics}{\large \textbf{FH Aachen}}{\large Germany}{}
+\cventry{\fontsize{9}{10.8}\selectfont{September 2016 - March 2020}}{\large Master Mechatronics}{\large \textbf{FH Aachen}}{\large Germany}{}
+{
+\textbf{CGPA: 2.0/4.0}
+\vspace{5pt}
+\begin{itemize}
+\item Focus: Advanced Mathematics, Advanced Robotics and Autonomous Mobile Systems, ROS
+%ROS, Advanced Fabrication Technology 
+%Systems Engineering,
+%\item Master Project: Development of a Control System for a Holonomic Automated Guided Vehicle (AGV)
+%Developed a two-wheeled balance bot
+%Developed Autonomous Navigation System to track Wildlife in Kruger National Park using ROS and Gazebo.
+\item Thesis: Visual-Wheel Odometry based Localization of Logistic Transporters
+%\item Additional: Conducted and tutored 50 students to develop an autonomous rover using the ROS framework during ROS Summer School, 2017 
+\end{itemize}
+}
+
+\vspace{10pt}
+
+%\cventry{\fontsize{9}{10.8}\selectfont{May 2010 - April 2014}}{Bachelors(B.Tech) in Mechanical Engineering}{College of Engineering}{Trivandrum, India}{GPA:7.56/10 (highest GPA:10.0)}
+\cventry{\fontsize{9}{10.8}\selectfont{May 2010 - April 2014}}{\large Bachelor Mechanical}{\large \textbf{College of Engineering Trivandrum}}{\large India}{}
+{
+\textbf{CGPA: 7.56/10.0}
+\vspace{5pt}
+\begin{itemize}
+\item Focus: Computer Programming and Numerical Methods, Computational Fluid Dynamics, Engineering Mathematics, Automobile Engineering
+\item Thesis: Numerical Study of Blunt Cone in a Flow Field
+\end{itemize}
+}
+
+
+
+%----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 %\section{\textbf{\Large{E}\large{XPERIENCE}}}
-\section{\scshape{Experience}}
-
+\vspace{20pt}
+\section{\scshape{\huge Experience}}
+\vspace{10pt}
 %\subsection{\scshape{Work Experience}}
-\cventry{\fontsize{9}{10.8}\selectfont{April 2018 - March 2020}}{Student Assistant}{Streetscooter GmbH}{Aachen, Germany}{}
+\cventry{\fontsize{9}{10.8}\selectfont{April 2018 - March 2020}}{\large Student Assistant}{\large \textbf{Streetscooter GmbH}}{\large Aachen, Germany}{}
 {
 \begin{itemize}
-\item Designed and implemented learning-based non-linear Odometry model using wheel- and steering-encoder signals.
-\item Implementation of various driving functionalities in simulation environments like Gazebo, Unity3D, UnrealEngine
-\item Implemented state of the art Deep Learning based monocular visual odometry systems using Tensorflow/Keras.    
-\newline{}
+%\item Designed and implemented learning-based non-linear Odometry model using wheel- and steering-encoder signals
+\item Trained a neural network to learn non-linearities in wheel rotations of a vehicle which lead to improved wheel odometry predictions than 
+existing model-based approaches
+\item Implemented and tested visual odometry and SLAM pipelines on a prototype vehicle to complement the existing localization subsystem
+%\item Implementation of various driving functionalities in simulation environments like Gazebo, Unity3D, UnrealEngine
+\item Built a bridge between LGSVL driving simulation (Unity3D) and Autonomous Driving software and integrated LG G920 steering wheel 
+for client/shareholder demonstrations
+%\item Implemented state of the art Deep Learning based monocular visual odometry systems using Tensorflow/Keras
+%\item Built and deployed Docker containers on SLURM based Linux server to implement above mentioned projects
+\item Built and deployed Docker containers on SLURM scheduling based Linux servers in order to improve computation time of simulations and deep neural networks
 \end{itemize}
 }
 
 %{Implemented various Unsupervised Learning Visual Odometry pipelines viz. Sfmlearner, vid2depth using Tensorflow\newline{}}
+\vspace{10pt}
 
-
-\cventry{\fontsize{9}{10.8}\selectfont{July 2014 - February 2016}}{Mechanical Engineer}{JAL Engineering Services L.L.C}{Oman}{}{
+\cventry{\fontsize{9}{10.8}\selectfont{July 2014 - February 2016}}{\large Mechanical Engineer}{\large \textbf{JAL Engineering Services L.L.C}}{\large Muscat, Oman}{}{
 \begin{itemize}
-\item Designed an installed HVAC systems in commercial buildings in Muscat, Oman.
-\item Designed and installed Mechanical  installations of Sea Water Intake Pumping Station(SWIPS) in Sohar, Oman.
-\newline{}
-\end{itemize}
-}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\scshape{Education}}
-
-\cventry{\fontsize{9}{10.8}\selectfont{September 2016 - March 2020}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.0}
-{
-\begin{itemize}
-\item Subjects: Advanced Mathematics, Advanced Robotics and Autonomous Mobile Systems, ROS
-%ROS, Advanced Fabrication Technology 
-%Systems Engineering,
-\item Projects: Developed of Holonomic Automated Guided Vehicle simulation using ROS, Developed a two-wheeled balance bot
-%Developed Autonomous Navigation System to track Wildlife in Kruger National Park using ROS and Gazebo.
-\item Thesis: Visual-Wheel Odometry based Localization of Logistic Transporters.
-\newline{}
-\end{itemize}
-}
-
-\cventry{\fontsize{9}{10.8}\selectfont{May 2010 - April 2014}}{Bachelors(B.Tech) in Mechanical Engineering}{College of Engineering}{Trivandrum, India}{GPA:7.56/10 (highest GPA:10.0)}
-{
-\begin{itemize}
-\item Subjects: Computer Programming and Numerical Methods, Computational Fluid Dynamics, Automobile Engineering.
-\item Thesis: Numerical Study of Blunt Cone in a Flow Field (ANYSYS FLUENT).
+%\item Designed and installed Potable water pipeline of Sea Water Intake Pumping Station(SWIPS) in Sohar, Oman
+\item Designed, installed and tested an Automatic Car Park Guidance System for Muscat Avenues Mall which significantly reduced traffic congestion
+\item Designed, installed and tested HVAC systems in numerous commercial buildings in Muscat, Oman
 \end{itemize}
 }
 
 \newpage
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS AND SEMINARS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{20pt}
+\section{\scshape{\huge Projects and Seminars}}
+\vspace{10pt}
+\cventry{\fontsize{9}{10.8}\selectfont{August 2017 - March 2018}}{\large Two-wheeled balance bot}{\large \textbf{FH Aachen}}{}{}
+{Designed a remote controlled two-wheeled balance bot using Systems Engineering techniques (SysML, UML) with the aim of learning iterative design and product development}
+\cventry{\fontsize{9}{10.8}\selectfont{August 2017 - March 2018}}{\large Autonomous Navigation System for wildlife tracking, \textbf{FH Aachen}}{}{}{}
+{Simulated a SLAM-based navigation(ROS/Gazebo) using a UGV to track endangered gazelle herds on uneven terrains in Kruger National Park, South Africa}
+\cventry{\fontsize{9}{10.8}\selectfont{August 2017}}{\large ROS Summer School}{\large \textbf{FH Aachen}}{}{}
+{Conducted and tutored 30 students to develop an autonomous rover using the ROS framework during ROS Summer School, 2017}
+\cventry{\fontsize{9}{10.8}\selectfont{August 2018 - May 2019}}{\large Control System for a Holonomic Automated Guided Vehicle (AGV)}{\large \textbf{FH Aachen}}{}{}
+{Developed a lower level PID control system for an industrial holonomic AGV for risk management in case of software-stack failure}
+
 %----------------------------------------------------------------------------------------
 %	SOFTWARE SKILLS SECTION
 %----------------------------------------------------------------------------------------
+\vspace{20pt}
+\section{\scshape{\huge Software Skills}}
+\vspace{10pt}
 
-\section{\scshape{Software Skills}}
+\subsection{\scshape{Programming Languages}}
 
-\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Python, C++, Robotic Operating System(ROS), Linux OS}
-\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{Matlab/SIMULINK, Unity3D, Unreal Engine\newpage}
+\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Python}
+\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{C++}
+
+\subsection{\scshape{Frameworks/Softwares}}
+\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Robotic Operating Software(ROS)}
+%\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{Matlab/SIMULINK}
+
+\subsection{\scshape{Simulation/Modelling}}
+\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{Unity3D, Unreal Engine (UE4), Gazebo}
+
+\subsection{\scshape{DevOps}}
+\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Linux OS/Bash}
+\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{Git, Docker}
+
+\subsection{\scshape{Processes}}
+\cvitem{\fontsize{9}{10.8}\selectfont{Basic}}{Agile/Scrum, CI/CD pipeline}
+
+%\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{Python, C++, Robotic Operating System(ROS), Linux OS}
+%\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{Matlab/SIMULINK, Unity3D, Unreal Engine\newpage}
 %\cvitem{Basic}{Computer Hardware and Support}
 
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
+\vspace{20pt}
+\section{\scshape{\huge Language Skills}}
+\vspace{10pt}
 
-\section{\scshape{Language Skills}}
+%BULLETED FORMAT
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Business Fluent}}{\normalfont{English}}{}
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Fluent}}{\normalfont{German}}{}
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Native}}{\normalfont{Malayalam}}{}
+
+% TABULAR FORMAT
+\begin{comment}
 
 \cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Mother Tongue}}{\normalfont{Malayalam}}{}
 %\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Other Language(s)}}{\normalfont{English(TOEFL: 111/120)}}{}
@@ -337,17 +375,31 @@ chance to showcase my drive.% for research.
 \begingroup
     \footnotesize{\normalfont{(*) Common European Framework of Reference(CEFR) Level}}
 \endgroup
-%----------------------------------------------------------------------------------------
-%	ADDITIONAL INFORMATION
-%----------------------------------------------------------------------------------------
 
-\section{\scshape{Additional Information}}
+\end{comment}
 
-\cventry{\fontsize{9}{10.8}\selectfont{June 2018 - Present}}{Member}{Foodsharing}{Aachen, Germany}{}{Food sharing is a 2012 initiative against food waste that saves food that would otherwise
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{comment}
+\section{\scshape{\huge Volunteer Experience}}
+\vspace{10pt}
+
+\cventry{\fontsize{9}{10.8}\selectfont{June 2018 - Present}}{Member}{Foodsharing}{Aachen, Germany}{}{Food sharing is a 2012 initiative 
+against food waste that saves food that would otherwise
 be thrown away. Over 200,000 registered users in Germany/Austria/Switzerland and
 over 25,000 volunteers, so-called food savers, make this initiative an international
 movement.}
-\cventry{\fontsize{9}{10.8}\selectfont{May 2013 - April 2014}}{Public Relations Head}{Make A Difference}{India}{}{Make A Difference is a platform that empowers youth to become change leaders who make positive social impact and create self-sustaining communities by educating nearly 4000 children across 23 cities in India.}
+
+\vspace{10pt}
+
+\cventry{\fontsize{9}{10.8}\selectfont{May 2013 - April 2014}}{Public Relations Head}{Make A Difference}{India}{}{Make A Difference is
+ a platform that empowers youth to become change leaders who make positive social impact and create self-sustaining communities
+  by educating nearly 4000 children across 23 cities in India.}
+
+\end{comment}
+
+
 %\cventry{\fontsize{9}{10.8}\selectfont{June 2013 - 2013}}{Event Organiser}{TEDxCET}{India}{}{The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences.}
 
 % \end{comment}
