@@ -52,6 +52,7 @@
 \usepackage{csquotes}
 \usepackage{ragged2e}
 %\usepackage{hyperref}
+\usepackage{textcase}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -161,19 +162,20 @@
 %----------------------------------------------------------------------------------------
 %	EDIT BEFORE SENDING
 %----------------------------------------------------------------------------------------
+\newcommand{\tofill}[1]{\textbf{{\color{red}#1}}\hspace{1mm}}
 
-
-\opening{Dear Prof. Sebastian Trimpe,} % Opening greeting
-\newcommand{\institute}{Institute for Data Science in Mechanical Engineering\hspace{1mm}}
-\newcommand{\position}{Research Assistant\hspace{1mm}}
-\newcommand{\applicationnr}{32206}
+\opening{Dear \tofill{recipient},} % Opening greeting
+\newcommand{\institute}{\tofill{institute}\hspace{1mm}}
+\newcommand{\position}{\tofill{position}\hspace{1mm}}
+\newcommand{\applicationnr}{\tofill{application nr.}}
 \recipient{\position (Nr. \applicationnr)}{\institute} % Letter recipient
+\newcommand{\instidescr}{\tofill{something positive about institute}}
+\newcommand{\projdescr}{\tofill{project description}}
 
 %----------------------------------------------------------------------------------------
 %	EDIT BEFORE SENDING
 %----------------------------------------------------------------------------------------
 
-\newcommand{\tofill}{\textbf{{\color{red}...........}}\hspace{1mm}}
 
 \date{\today} % Letter date
 \closing{Sincerely yours,} % Closing phrase
@@ -185,9 +187,9 @@
 
 \justify
 
-My name is Ajith Krishnan and while I have a strong background in \tofill and experience with \tofill  it is the opportunity to 
-work as \position at \institute that excites me. \tofill. I have always wanted to work on projects on \tofill and have a passion 
-for guiding projects to completion.
+My name is Ajith Krishnan and while I have a strong background in \tofill{background} and experience with \tofill{background}  
+it is the opportunity to work as \position at \institute that excites me. \instidescr. 
+I have always wanted to work on projects on \projdescr and have a passion for guiding projects to completion.
 
 I have completed my masters in Mechatronics from FH Aachen. During my course I have gained experience implementing various model-based and 
 deep-learning based computer-vision pipelines to improve the localization accuracy of autonomous vehicles. I am well versed with Git and Docker, 
