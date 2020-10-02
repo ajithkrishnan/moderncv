@@ -164,12 +164,19 @@
 %----------------------------------------------------------------------------------------
 \newcommand{\tofill}[1]{\textbf{{\color{red}#1}}\hspace{1mm}}
 
+% SALUTATION:
 \opening{Dear \tofill{recipient},} % Opening greeting
+% INSTITUTE:
 \newcommand{\institute}{\tofill{institute}\hspace{1mm}}
+% POSITION: 
 \newcommand{\position}{\tofill{position}\hspace{1mm}}
+% APPLICATION NO.
 \newcommand{\applicationnr}{\tofill{application nr.}}
+
 \recipient{\position (Nr. \applicationnr)}{\institute} % Letter recipient
+% INSTITUTE DESCRIPTION: 
 \newcommand{\instidescr}{\tofill{something positive about institute}}
+% PROJECT DESCRIPTION: 
 \newcommand{\projdescr}{\tofill{project description}}
 % SAMPLE
 % RWTH: I have closely followed the research published by various departments in RWTH Aachen and have admired the quality of work.
